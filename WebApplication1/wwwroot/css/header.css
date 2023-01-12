@@ -1,0 +1,142 @@
+﻿.header {
+    background: #d7d7d7;
+    padding: 20px 0;
+    display: flex;
+    align-items:center;
+}
+
+.header-logo {
+    height:50px;
+    cursor:pointer;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header-buy-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #e1752c;
+    padding: 0 20px;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 25px;
+    width: 500px;
+}
+
+.search-box img {
+        height: 18px;
+        object-fit: cover;
+}
+
+.search-box input {
+    height: 50px;
+    border: none;
+    width: 600px;
+    font-family: SFUFutura-Book;
+    padding: 8px 20px;
+}
+
+.header-tool {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.img-tool {
+    padding: 0 15px;
+    height: 25px;
+}
+
+.user-wrap {
+    cursor: pointer;
+}
+
+.notification-wrap, .cart-wrap {
+    opacity: 0.4;
+}
+
+.header-language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-language a img {
+    width: 32px;
+}
+
+.header-menu {
+    background: #464646;
+    font-family: SFUFutura-Book;
+}
+
+.menu {
+    width: calc(100% - 300px);
+}
+
+.list-item {
+    height: 50px;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+.top-menu-item {
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    cursor: default;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-item:hover {
+    background: #ebebeb;
+    color: #000;
+    cursor:pointer
+}
+
+.track-order {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: flex-end;
+}
+
+.track-order a{
+    line-height: 30px;
+    padding: 0 20px;
+    font-family: SFUFutura-Book;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    background: #fff;
+    cursor: pointer;
+}

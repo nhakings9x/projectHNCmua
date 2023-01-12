@@ -1,0 +1,59 @@
+﻿.footer-wrap {
+    background: #363636;
+}
+
+.partner-logo {
+    padding: 30px 0;
+    border-bottom: 1px solid #707070;
+}
+.footer-wrap .partner-logo img {
+    height: 30px;
+}
+
+.footer-content {
+    border-bottom: 1px solid #707070;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contents ul {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.contents ul li {
+    padding: 5px 0;
+}
+
+.contents ul li a {
+        color: inherit;
+        cursor: pointer;
+}
+
+.contents ul li a:hover {
+    color: #0056b3!important;
+}
+
+.input-email-box {
+    border: 1px solid 1px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+    .input-email-box input {
+        border: none;
+        font-style: italic;
+        flex-grow: 1;
+        height: 40px;
+        padding: 8px;
+        vertical-align: middle;
+    }
