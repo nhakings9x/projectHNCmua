@@ -6,11 +6,14 @@
     <title>@ViewData["Title"] - WebApplication1</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="~/font/fontawesome-free-6.2.1-web/css/all.css" rel="stylesheet" />
+    <link href="~/font/fontawesome-free-6.2.1-web/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
     <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/css/header.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
-
+    <link href="~/css/online-support.css" rel="stylesheet" />
+    <link href="~/css/home/home-main.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -39,6 +42,30 @@
                                 <div class="user-wrap">
                                     <div class="img-box">
                                         <img src="~/img/account.png" class="img-tool"/>
+                                    </div>
+                                    <div class="user-sub">
+                                        <div class="user-box">
+                                            <ul>
+                                                <li>
+                                                    <a class="mr-3">Đăng nhập</a>
+                                                    |
+                                                    <a class ="ml-3">Đăng ký</a>
+                                                </li>
+                                                <li>
+                                                    <a >Quản lý tài khoản</a>
+                                                </li>
+                                                <li>
+                                                    <a>Đơn hàng của tôi</a>
+                                                </li>
+                                                <li>
+                                                    <a>Đơn hàng chờ thanh toán</a>
+                                                </li>
+                                                <li>
+                                                    <a>Ví HNCpay</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="cart-wrap">
@@ -74,21 +101,63 @@
                                 <li class="top-menu-item">
                                     <a> BLOGS </a>
                                 </li>
+                                <li class="detail-top-menu">
+                                    <div class="header-product-wrap">
+                                        <div class="list-category">
+                                            <p>DANH MỤC</p>
+                                            <ul>
+                                                <li>Điện tử - Thiết bị số</li>
+                                                <li>Nhà cửa đời sống</li>
+                                                <li>Tiêu dùng thực phẩm</li>
+                                                <li>Làm đẹp</li>
+                                                <li>Sức khoẻ</li>
+                                                <li>Mẹ & bé</li>
+                                                <li>Thời trang</li>
+                                            </ul>
+                                            <a>Xem tất cả</a>
+                                        </div>
+                                        <div class="list-category brands">
+                                            <p>THƯƠNG HIỆU</p>
+                                            <ul>
+                                                <li>Adidas</li>
+                                                <li>Zara</li>
+                                                <li>Anne klein</li>
+                                                <li>Ray-ban</li>
+                                                <li>Fossil</li>
+                                            </ul>
+                                        </div>
+                                        <div class="list-img">
+                                            <div class="item">
+                                                <div class="img-wrap">
+                                                    <a>
+                                                        <img src="~/img/header-detail/1663ce91-0c7c-419f-ba49-a9b3970c1958.jpg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="img-wrap">
+                                                    <a>
+                                                        <img src="~/img/header-detail/f6df1cde-4c0f-4390-9544-4993e18d85ae.jpg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="overlay"></li>
                             </ul>
                         </div>
                         <div class="track-order">
                             <a>Theo dõi đơn hàng</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
             @RenderBody()
-        </main>
-    </div>
+    
 
     <footer class="footer-wrap">
         <div class="partner-logo">
@@ -196,18 +265,217 @@
                                 <p>Vô vàn hot deals đang chờ bạn khám phá!</p>
                                 <div class="input-email-box">
                                     <input type="text" placeholder="Email" />
-                                    <i class="fa fa-paper-plane"></i>
+                                <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                            </div>
+                            <div class="title">
+                                KẾT NỐI VỚI CHÚNG TÔI
+                            </div>
+                            <div class="contents d-flex">
+                                <div class="item-contents" title="Facebook">
+                                    <a>
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="item-contents" title="Instagram">
+                                    <a>
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="item-contents" title="Youtube">
+                                    <a>
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="item-contents" title="Zalo">
+                                    <a>
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
                                 </div>
                             </div>
                             
                     </div>
                     <div class="col-3">
+                            <div class="title">
+                                TẢI ỨNG DỤNG
+                            </div>
+                            <div class="contents">
+                                <p>HNCmua đã có mặt trên 2 nền tảng di động IOS & Android. Hãy mang đến cho mình trải nghiệm mua sắm khác biệt</p>
+                                <div class="download-app-wrap">
+                                    <div>
+                                        <img class="qr-code" src="~/img/qr.png" />
+                                    </div>
+                                    <div class="link-download">
+                                        <a>
+                                            <img src="~/img/appstore.png" />
+                                        </a>
+                                        <a>
+                                            <img src="~/img/chplay.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-12">
+                            <div class="border-bottom-footer mt-3 mb-4"></div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-6">
+                        <div class="title">
+                                TRỤ SỞ CHÍNH - HÀ NỘI
+                        </div>
+                        <div class="contents">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Địa chỉ:</td>
+                                        <td>Tầng 2, tòa nhà CT4, Vimeco 2, phố Nguyễn Chánh, phường Trung Hòa, quận Cầu Giấy, thành phố Hà Nội.</td>
+                                    </tr>
+                                        <tr>
+                                            <td>Điện thoại:</td>
+                                            <td>(+84) 24 3556 2896 - Email: info@hopnhat.com</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        <div class="col-6">
+                            <div class="title">
+                                CHI NHÁNH - TP. HỒ CHÍ MINH
+                            </div>
+                            <div class="contents">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Địa chỉ:</td>
+                                            <td>	Tầng 8, tòa nhà Athena, số 146 – 148 đường Cộng Hòa, phường 12, quận Tân Bình, thành phố Hồ Chí Minh.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Điện thoại:</td>
+                                            <td>	(+84) 28 3948 3917 - Email: info@hopnhat.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="border-bottom-footer mt-3 mb-4"></div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                            HNC TẠI NƯỚC NGOÀI
+                    </div>
+                    <div class="contents">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="country-name">
+                                    <p>♦ Mỹ</p>
+                                    <p class="address">
+                                            California: 12122 Brookhurst St., Garden Grove, CA 92840.
+                                    </p>
+                                    <p class="address">
+                                            Oregon: 402 SE 108th Ave, Portland, OR 97216.
+                                    </p>
+                                        <p class="address">
+                                            Texas: 11127 Bellaire Blvd Houston, Tx 77072.
+                                    </p>
+                                </div>
+                                <div class="country-name">
+                                        <p>♦ TÂY BAN NHA</p>
+                                    <p class="address">
+                                            Madrid: Calle Rosario 1-Local 2-28029 Madrid.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                    <div class="country-name">
+                                        <p>♦ ĐỨC</p>
+                                        <p class="address">
+                                            Berlin: Marzahner Strasse 17, Raum C11, 13053 Berlin.
+                                        </p>
+                                    </div>
+                                    <div class="country-name">
+                                        <p>♦ NHẬT BẢN</p>
+                                        <p class="address">
+                                            Tokyo 1: 3rd Floor, OCS Tokyo Skygate 9-27, Tatsumi 3-chome, Koto-ku, Tokyo 135-8527 Japan.
+                                        </p>
+                                        <p class="address">
+                                            Tokyo 2: 140-0012 Tokyo, Shinagawa-ku, Katsushima 1-1-1 Tokyo SRC, Unit B - 2F -2c-10 HNC.
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="col-3">
+                                    <div class="country-name">
+                                        <p>♦ ÚC</p>
+                                        <p class="address">
+                                            Sydney: Lots 31 and 32, 76b Edinburgh Road, Marrickville NSW 2204.
+                                        </p>
+                                        <p class="address">
+                                            Melbourne: 35/131 Hyde St, Yarraville, VIC 3013.
+                                        </p>
+                                    </div>
+                                    <div class="country-name">
+                                        <p>♦ HÀN QUỐC</p>
+                                            <p class="address">
+                                            Seoul: Gangseo-gu Hanul-gil 246 KE Cargo Terminal Gate24 Hanjin Express - HNC.
+                                            </p>
+                                            
+                                    </div>
+                            </div>
+                            <div class="col-3">
+                                    <div class="country-name">
+                                        <p>♦ TRUNG QUỐC</p>
+                                        <p class="address">
+                                            Quảng Châu: Số 2, đường Quân Dân Đông, khu Bạch Vân, thành phố Quảng Châu, 510440 (广州市白云区军民东路自编2号).
+                                        </p>
+                                    </div>
+                                    <div class="country-name">
+                                        <p>♦ ANH</p>
+                                        <p class="address">
+                                            Berkshire: Building F2, Brook Farm, Bath Road, Colnbrook, Slough, Berkshire, England, SL3 0LU.
+                                        </p>
+                                    </div>
+                                    <div class="country-name">
+                                        <p>♦ PHÁP</p>
+                                        <p class="address">
+                                            Paris: 28 rue Carnot 94270 Le Kremlin Bictre.
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-content">
+                    <div class="contents">
+                        <div><p style="color: white; margin-bottom: 0;"> 2020 hncmua | Hotline: 086.891.6699</p></div>
+
+                        <div class="pay-list">
+                            <img src="~/img/footer-bottom/hncpay.png" />
+                            <img src="~/img/footer-bottom/jcb.png" />
+                            <img src="~/img/footer-bottom/shopeepay.png" />
+                            <img src="~/img/footer-bottom/zalopay.png" />
+                            <img src="~/img/footer-bottom/master.png" />
+                            <img src="~/img/footer-bottom/vnpay.png" />
+                            <img src="~/img/footer-bottom/visa.png" />
+                            <img src="~/img/footer-bottom/atm.png" />
+                        </div>
+                        <a>
+                            <img src="~/img/footer-bottom/layer69.png" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </footer>
+    <div class="online-support"><p>Online support</p></div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

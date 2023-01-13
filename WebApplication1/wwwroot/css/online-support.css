@@ -1,0 +1,22 @@
+﻿.online-support {
+    width: 300px;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999999999;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: rgba(0, 153,255);
+    right: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+.online-support p{
+    padding-left: 16px;
+    padidng-top: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom:0 !important;
+}

@@ -49,11 +49,85 @@
     margin-bottom: 30px;
 }
 
-    .input-email-box input {
-        border: none;
-        font-style: italic;
-        flex-grow: 1;
-        height: 40px;
-        padding: 8px;
-        vertical-align: middle;
-    }
+.input-email-box input {
+    border: none;
+    font-style: italic;
+    flex-grow: 1;
+    height: 40px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.download-app-wrap{
+    display: flex;
+}
+
+.qr-code{
+    width: 70px;
+}
+
+.link-download {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.link-download a img {
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.item-contents {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #464646;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.contents table tr td {
+    vertical-align: text-top;
+    min-width: 100px;
+    padding-bottom: 15px;
+}
+
+.border-bottom-footer {
+    border-bottom: 1px solid #707070;
+}
+
+
+/*footer bottom*/
+.footer-wrap .footer-bottom .contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.pay-list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pay-list img{
+    padding: 0 20px;
+}
+
+.bottom-content{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.contents a{
+    cursor: pointer
+}
