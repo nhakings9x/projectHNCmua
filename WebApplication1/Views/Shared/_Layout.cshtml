@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link href="~/font/fontawesome-free-6.2.1-web/css/all.css" rel="stylesheet" />
     <link href="~/font/fontawesome-free-6.2.1-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
     <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/css/header.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
+    <link href="~/css/detail/detail.css" rel="stylesheet" />
     <link href="~/css/online-support.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
     <link href="~/css/home/home-main.css" rel="stylesheet" />
+
 </head>
 <body>
     <header>
@@ -25,7 +30,10 @@
                             <div class="header-logo"><a><img src="~/img/logo.png" /></a></div>
                             <div class="header-search">
                                 <div class="header-buy-link">Gửi link/hình ảnh<br>để nhận báo giá</div>
-                                <form>
+                                <div class="icon-link d-none">
+                                    <img src="~/img/link.png" />
+                                </div>
+                                <form class="mobile-mode">
                                     <div class="search-box">
                                         <img src="~/img/search.png"/>
                                         <input type="text" class="search-box-text" placeholder="Nhập link hoặc tên sản phẩm bạn cần mua" />
@@ -34,6 +42,16 @@
                                 </form>
                             </div>
                             <div class="header-tool">
+                                <div class="notification-wrap icon-header-mobile">
+                                    <div class="img-box">
+                                        <img src="~/img/tracking.png" class="img-tool" />
+                                    </div>
+                                </div>
+                                <div class="notification-wrap icon-header-mobile">
+                                    <div class="img-box">
+                                        <img src="~/img/search.png" class="img-tool" />
+                                    </div>
+                                </div>
                                 <div class="notification-wrap">
                                     <div class="img-box">
                                         <img src="~/img/bell.png" class="img-tool" />
@@ -181,13 +199,13 @@
                     <a>
                         <img src="~/img/nike.png" />
                     </a>
-                        <a>
+                    <a class="mobile-mode">
                         <img src="~/img/panasonic.png" />
                         </a>
-                    <a>
+                    <a class="mobile-mode">
                         <img src="~/img/zara.png" />
                     </a>
-                    <a>
+                    <a class="mobile-mode">
                         <img src="~/img/kw.png" />
                     </a>
                 </div>
@@ -199,9 +217,9 @@
                 <div class="row">
                     <div class="col-3">
                         <div class="title">
-                            HỖ TRỢ KHÁCH HÀNG
+                            Hỗ trợ khách hàng
                         </div>
-                         <div class="contents">
+                            <div class="contents mobile-mode">
                                 <ul>
                                     <li>
                                         <a>Hướng dẫn đặt hàng</a>
@@ -229,9 +247,9 @@
                     </div>
                     <div class="col-3">
                             <div class="title">
-                                VỀ HNCMUA.COM
+                                Về hncmua.com
                             </div>
-                            <div class="contents">
+                            <div class="contents mobile-mode">
                                 <ul>
                                     <li>
                                         <a>Giới thiệu HNCmua</a>
@@ -257,11 +275,11 @@
                                 </ul>
                             </div>
                     </div>
-                    <div class="col-3">
-                            <div class="title">
+                        <div class="col-3">
+                            <div class="title mobile-mode">
                                 ĐĂNG KÝ NHẬN BẢN TIN HNCMUA
                             </div>
-                            <div class="contents">
+                            <div class="contents mobile-mode">
                                 <p>Vô vàn hot deals đang chờ bạn khám phá!</p>
                                 <div class="input-email-box">
                                     <input type="text" placeholder="Email" />
@@ -269,7 +287,7 @@
                                 </div>
                             </div>
                             <div class="title">
-                                KẾT NỐI VỚI CHÚNG TÔI
+                                Kết nối với chúng tôi
                             </div>
                             <div class="contents d-flex">
                                 <div class="item-contents" title="Facebook">
@@ -295,11 +313,11 @@
                             </div>
                             
                     </div>
-                    <div class="col-3">
-                            <div class="title">
+                        <div class="col-3">
+                            <div class="title mobile-mode">
                                 TẢI ỨNG DỤNG
                             </div>
-                            <div class="contents">
+                            <div class="contents mobile-mode">
                                 <p>HNCmua đã có mặt trên 2 nền tảng di động IOS & Android. Hãy mang đến cho mình trải nghiệm mua sắm khác biệt</p>
                                 <div class="download-app-wrap">
                                     <div>
@@ -315,12 +333,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="show-moblie">
+                                <a>
+                                    <img src="~/img/footer-bottom/layer69.png" />
+                                </a>
+                            </div>
                     </div>
-                    <div class="col-12">
+                        
+                        <div class="col-12 mobile-mode">
                             <div class="border-bottom-footer mt-3 mb-4"></div>
                     </div>
                 </div>
-                <div class="row ">
+                    <div class="row mobile-mode">
                     <div class="col-6">
                         <div class="title">
                                 TRỤ SỞ CHÍNH - HÀ NỘI
@@ -363,7 +387,7 @@
                             <div class="border-bottom-footer mt-3 mb-4"></div>
                         </div>
                 </div>
-                <div class="row">
+                    <div class="row mobile-mode">
                     <div class="title">
                             HNC TẠI NƯỚC NGOÀI
                     </div>
@@ -452,11 +476,11 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="bottom-content">
+                <div class="bottom-content mobile-mode">
                     <div class="contents">
                         <div><p style="color: white; margin-bottom: 0;"> 2020 hncmua | Hotline: 086.891.6699</p></div>
 
-                        <div class="pay-list">
+                        <div class="pay-list mobile-mode">
                             <img src="~/img/footer-bottom/hncpay.png" />
                             <img src="~/img/footer-bottom/jcb.png" />
                             <img src="~/img/footer-bottom/shopeepay.png" />
@@ -466,7 +490,7 @@
                             <img src="~/img/footer-bottom/visa.png" />
                             <img src="~/img/footer-bottom/atm.png" />
                         </div>
-                        <a>
+                        <a class="mobile-mode">
                             <img src="~/img/footer-bottom/layer69.png" />
                         </a>
                     </div>
@@ -476,9 +500,107 @@
         </div>
     </footer>
     <div class="online-support"><p>Online support</p></div>
+    <div class="support-form">
+
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel.owl-carousel-slide2').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 12,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            dots:false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+        $('.owl-carousel.owl-carousel-slide1').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 12,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+
+        $('.owl-carousel.test1').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 12,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+
+        $('.owl-carousel.owl-export').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 12,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('.owl-carousel.owl-blogs').owlCarousel({
+            loop: true,
+            nav: true,
+            margin: 12,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+        
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

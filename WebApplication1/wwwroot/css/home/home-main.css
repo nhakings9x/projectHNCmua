@@ -12,12 +12,18 @@
     }
 
         .page-body .product-grid .title strong {
-            border-bottom: 3px solid #000;
+            
 
         }
-            .page-body .product-grid .title strong a{
+            .page-body .product-grid .title strong a {
                 font-size: 26px;
+                border-bottom: 3px solid #000;
             }
+                .page-body .product-grid .title strong a:hover {
+                    text-decoration: none;
+                    border-bottom: 3px solid #0056b3;
+                    color: #0056b3;
+                }
 
             .page-body .product-grid .desception {
                 text-align: center;
@@ -39,7 +45,7 @@
 }
 
 .box-big {
-    height: 100%;
+    height: calc(100% + 15px);
     display: flex;
     flex-direction: column;
 }
@@ -63,12 +69,16 @@
             text-shadow: 0 0 2px #fff;
         }
 
-.picture-product {
-    width: 100%;
-    position: relative;
-    padding-top: 100%;
-    background: #e1e1e1;
-}
+            .btn-like img {
+                height: 20px;
+            }
+
+            .picture-product {
+                width: 100%;
+                position: relative;
+                padding-top: 100%;
+                background: #e1e1e1;
+            }
 
     .picture-product a {
         width: 100%;
@@ -199,6 +209,17 @@
         margin-bottom: 20px;
     }
 
+    .export-wrap .item-big {
+        height: 100% !important;
+    }
+        .export-wrap .item-big img {
+            object-fit: cover;
+        }
+.title-top-right {
+    top: 5%;
+    right: 10%;
+}
+
         .export-wrap a img {
             position: absolute;
             top: 50%;
@@ -222,14 +243,85 @@
         .export-wrap a:hover::after {
             display: block
         }
-
-        .export-wrap-big {
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            display: inline-block;
+        .export-wrap a:hover .link-detail {
+            display: none;
         }
+
+        .export-wrap a .item {
+            width: 30%;
+            font-size: 12px;
+            position: absolute;
+            text-transform: uppercase;
+            -webkit-line-clamp: 3;
+            color: #000;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            display: -webkit-box;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+
+
+.export-wrap-big a .item {
+    width: 50%;
+    font-size: 12px;
+    position: absolute;
+    text-transform: uppercase;
+    color: #000;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight:bold;
+}
+
+.export-wrap a .title-top-left {
+    top: 10%;
+    left: 10%
+}
+
+            .export-wrap a .title-bottom-left {
+                bottom: 20%;
+                left: 10%;
+            }
+
+                .export-wrap-big a .title-top-right {
+                    top: 10%;
+                    right: -20%;
+                }
+
+                .export-wrap a .link-detail {
+                    position: absolute;
+                    bottom: 30px;
+                    font-weight: bold;
+                    left: 10%;
+                    display: block;
+                }
+
+            .export-wrap a .link-detail p {
+                color: #000;
+                margin-bottom: 0;
+                padding-left: 25px;
+                font-style: italic;
+                font-size: 11px;
+            }
+
+                .export-wrap a .link-detail p::before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    left: 0;
+                    border-bottom: 2px solid #000;
+                    bottom: 4px;
+                    width: 15px;
+                }
+
+                .export-wrap-big {
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    display: inline-block;
+                }
 
             .export-wrap-big a::after {
                 width: calc(100% - 20px);
@@ -334,3 +426,11 @@
             max-height: 43px;
             overflow: hidden;
         }
+.items-c {
+    height: 902px
+
+}
+
+.items-d {
+    height: calc(50% - 10px)
+}

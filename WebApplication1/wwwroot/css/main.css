@@ -25,3 +25,8 @@ a {
 .ml-3 {
     margin-left: 1rem;
 }
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

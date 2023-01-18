@@ -92,6 +92,10 @@
     margin-right: auto;
 }
 
+.show-moblie{
+    display: none;
+}
+
 .contents table tr td {
     vertical-align: text-top;
     min-width: 100px;

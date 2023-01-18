@@ -20,6 +20,9 @@
     box-sizing: unset
 }
 
+.icon-header-mobile{
+    display: none !important;
+}
 
 .header-logo {
     height: 50px;
@@ -195,11 +198,15 @@
     align-items: center;
 }
 
-.top-menu-item:hover {
-    background: #ebebeb;
-    color: #000;
-    cursor:pointer
-}
+    .top-menu-item a {
+        white-space: nowrap
+    }
+
+    .top-menu-item:hover {
+        background: #ebebeb;
+        color: #000;
+        cursor: pointer
+    }
 
 .track-order {
     display: flex;
@@ -273,7 +280,7 @@
         }
             .header-product-wrap .list-category ul li {
                 padding: 10px;
-                margin-left: 10;
+                margin-left: 10px;
             }
 
                 .header-product-wrap .list-category ul li:hover {
