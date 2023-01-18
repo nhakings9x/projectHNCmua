@@ -1,4 +1,4 @@
-﻿
+﻿@model WebApplication1.Models.Products
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -16,29 +16,282 @@
 
 <div class="line-break"></div>
 
-<div class="product-detail">
+<div class="product-detail-1">
     <div class="page-body product-detail-page">
         <div class="container">
             <div class="row">
                 <div class="page-body">
-                    <div class="product-essential">
+                    <div class="product-essentia">
                         <div class="gallery">
                             <div class="picture">
                                 <div class="image-box">
+                                    <div class="box-product-img">
+                                        <img class="img-product-big" src="~/img/product-detail/0005933_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_550 (1).png" />
+                                        <div class="sale">
+                                            <p>-25%</p>
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                             <div class="picture-thumbs">
-
+                                <div class="thumbs-item">
+                                    <img src="~/img/product-detail/0005934_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                </div>
+                                <div class="thumbs-item">
+                                    <img src="~/img/product-detail/0005935_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                </div>
+                                <div class="thumbs-item">
+                                    <img src="~/img/product-detail/0005936_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                </div>
+                                <div class="thumbs-item">
+                                    <img src="~/img/product-detail/0005937_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                </div>
+                                <div class="thumbs-item">
+                                    <img src="~/img/product-detail/0005936_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                    <div class="number">
+                                        <span>+1</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="popup-slide-wrap">
+                                <div class="box-slide">
+                                    <div class="btn-close-popup-slide">X</div>
+                                    <div class="slide">
+                                        <div class="slide-track">
+                                            <div class="slide-list owl-carousel owl-theme">
+                                                <div class="item-slide">
+                                                    <img src="~/img/product-detail/0005933_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_550 (1).png" />
+                                                </div>
+                                                <div class="item-slide">
+                                                    <img src="~/img/product-detail/0005934_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+
+                                                </div>
+                                                <div class="item-slide">
+                                                    <img src="~/img/product-detail/0005935_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+
+                                                </div>
+                                                <div class="item-slide">
+                                                    <img src="~/img/product-detail/0005936_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                                </div>
+                                                <div class="item-slide">
+                                                    <img src="~/img/product-detail/0005937_thuc-pham-bo-sung-khoang-chat-coldcalm-boiron-kids-cho-tre-tu-6-thang-tuoi_415.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="overlay1"></div>
 
                             </div>
                         </div>
-                        <div class="overview"></div>
+                        <div class="overview">
+                            <div class="product-name">
+                                <h1>@Model.Name</h1>
+                            </div>
+                            <div class="origin">
+                                <span>Xuất xứ: </span>
+                                <span>Thương hiệu: </span>
+                            </div>
+                            <div class="price-product">
+                                <div class="prices">
+                                    <div class="new">
+                                        <div class="price-value-0">@Model.NewPrice đ</div>
+                                    </div>
+                                    <div class="old">
+                                        <div class="old-price-value">@Model.OldPrice đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-noteds">
+                                <ul>
+                                    <li>
+                                        <span>*</span>
+                                        Thời gian giao hàng tiêu chuẩn 1 - 3 ngày làm việc kể từ ngày đặt đơn
+                                    </li>
+                                    <li>
+                                        <span>*</span>
+                                        Giá trên chưa bao gồm phí giao hàng nội địa
+                                    </li>
+                                    <li>
+                                        <span>*</span>
+                                        Mua giá bán buôn / Bán sỉ từ 10 sản phẩm chỉ với
+                                        <a class="tier-price">220.000 đ</a>
+                                        <a class="view-more">Xem thêm ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="short-description">
+                                Thời điểm chuyển mùa, thời tiết thay đổi thất thường khiến trẻ không kịp thích nghi nên rất dễ bị cảm lạnh. Đặc biệt là trẻ sơ sinh và trẻ nhỏ thường có khả năng miễn dịch kém, rất dễ mắc các bệnh liên quan đến đường hô hấp. Thuốc trị cảm ColdCalm Boiron KIDS được điều chế với các thành phần giúp làm giảm các triệu chứng cảm lạnh như hắt hơi, sổ mũi, nghẹt mũi,.. cho bé từ 6 tháng tuổi.
+
+
+                            </div>
+                            <div class="list-button">
+                                <div class="overview-buttons">
+                                    <button class="button-2 add-to-wishlist-button">
+                                        <img src="~/img/products/like.png" />
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="product-collateral">
-                        <div class="detail-wrap"></div>
+                        <div class="detail-wrap">
+                            <div class="tab">
+                                <div class="tools">
+                                    <button class="btn-tab-detail show">Mô tả sản phẩm</button>
+                                    <button class="btn-tab-detail">Chính sách giao hàng</button>
+                                    <button class="btn-tab-detail">Lưu ý mua hàng</button>
+                                </div>
+                                <div class="content-wrap">
+                                    <div class="content-item d-block">
+
+                                        <div class="full-content">
+                                            <h2>Giới thiệu thuốc trị cảm lạnh cho bé ColdCalm Boiron KIDS </h2>
+                                            <p>- ColdCalm được điều chế để làm giảm các chứng do cảm lạnh gây ra, khiến bé khó chịu: hắt hơi, nghẹt mũi, … vô cùng hiệu quả, được hàng triệu Mom tại Mỹ tin tưởng sử dụng. Trong điều kiện thời tiết nắng mưa thất thường và thay đổi liên tục, trẻ em rất dễ bị nhiễm cảm lạnh, chính vì vậy, hãy chuẩn bị sẵn trong tủ thuốc gia đình ColdCalm để bé yêu luôn khỏe mạnh và tươi vui nhé!</p>
+                                            <p>- Boiron là một thương hiệu rất uy tín, với những sản phẩm điều trị cảm nhận được các giải thưởng danh giá. Ngoài tính hiệu quả, độ an toàn, thì Boiron cũng chú trọng đến tính tiện dụng của sản phẩm, chinh phục cả những người khó tính. </p>
+                                            <h2>Thành phần</h2>
+                                            <p>- Allium cepa 3C HPUS: Hoạt chất làm giảm hắt hơi và sổ mũi</p>
+                                            <p>- Apis mellifica 15C HPUS: Giảm nghẹt mũi</p>
+                                            <p>- Kali bichromicum 6C HPUS: Làm giảm tiết dịch mũi</p>
+                                            <p>- Nuxhmica 3C HPUS: Giảm các cuộc tấn công hắt hơi</p>
+                                            <p>- Gelsemium sempervirens 6C HPUS: Làm giảm đau đầu liên quan đến cảm lạnh</p>
+                                            <p>- Eupatorium perheadsiatum 3C HPUS: Giảm đau liên quan đến cảm lạnh</p>
+                                            <p>- Phytolacca decandra 6C HPUS: Giảm sốt nhẹ</p>
+                                            <p>- Pulsatilla 6C HPUS: Làm giảm cảm lạnh khi mất mùi vị và mùi</p>
+                                            <h2>Công dụng của sản phẩm</h2>
+                                            <p>
+                                                ➨ColdCalm Boiron nhanh chóng giúp hết hắt hơi, sổ mũi, nghẹt mũi, viêm mũi dị ứng. Hạ sốt nhẹ và giảm tình trạng nhức đầu, không gây buồn ngủ
+                                            </p>
+
+                                            <p>
+                                                ➨Trị cảm lạnh nhanh chóng, hiệu quả chỉ sau 2-3 ngày
+                                            </p>
+                                            <p>➨Giảm mức độ nghiêm trọng ở các triệu chứng cảm lạnh ảnh hưởng đến sức khỏe</p>
+                                            <p>➨Hỗ trợ điều trị dứt điểm bệnh cảm lạnh ở trẻ em bao gồm bệnh cảm lạnh đa triệu chứng.</p>
+                                            <p>➨Tác động đến hệ miễn dịch của cơ thể cũng như đường hô hấp, góp phần làm giảm các triệu chứng cảm lạnh thông thường bao gồm chứng hắt hơi, sổ mũi hoặc nghẹt mũi, tiết dịch mũi dạng đặc, có thể phát triển thành đờm ở họng.</p>
+                                            <p>➨ColdCalm Boiron còn có khả năng cải thiện tình trạng ăn uống cho các bé khi đang điều trị cảm cúm, cảm lạnh. Cụ thể, một số thành phần của muối uống sẽ tác động đến vị giác và khứu giác, hỗ trợ hai giác quan này kích thích cảm giác thèm ăn, giúp ăn ngon miệng hơn.</p>
+
+                                            <h2>Ưu điểm nổi bật của sản phẩm</h2>
+                                            <p>➨ColdCalm mang lại hiệu quả cao, chỉ sau vài lần áp dụng các triệu chứng cảm lạnh giảm dần và biến mất hoàn toàn. </p>
+                                            <p>➨Thuốc được bào chế dưới dạng cao lỏng, không có mùi nên bé Boiron dễ dàng sử dụng</p>
+                                            <p>➨Tuyệt đối không cần dùng thêm các chất bị FDA cấm: thuốc nhuộm, chất tạo mùi,… an tâm cho trẻ sử dụng. </p>
+                                            <p>➨Thuốc cảm Boiron là nhãn hiệu số 1 được các chuyên gia và bác sĩ khuyên dùng</p>
+                                            <p>➨Thuốc cảm ColdCalm Boiron được thiết kế dễ sử dụng và bảo quản tốt, mỗi hộp 30 ống sử dụng Sản phẩm không gây buồn ngủ hay tác dụng phụ. </p>
+                                            <p>➨ColdCalm Boiron dành cho trẻ từ 6 tháng tuổi trở lên đã nhận được nhiều đánh giá tốt trên Amazon và nhiều trang web thương mại.</p>
+                                            <h2>Đối tượng sử dụng</h2>
+                                            <ul>
+                                                <li>Trẻ trên 6 tháng </li>
+                                                <li>Trẻ có biểu hiện hắt hơi, sổ mũi, nghẹt mũi, mệt mỏi </li>
+                                                <li>Trẻ bị cảm, sốt nhẹ </li>
+                                            </ul>
+                                            <h2>Hướng dẫn sử dụng</h2>
+                                            <ul>
+                                                <li>Xoay ống để mở, bóp nhẹ cho phần dung dịch trong ống vào miệng bé. Mỗi ngày dùng 3-6 ống. </li>
+                                                <li>Giảm liều nếu các triệu chứng giảm dần.</li>
+                                            </ul>
+                                            <h2>
+                                                Lưu ý khi sử dụng
+                                            </h2>
+                                            <ul>
+                                                <li>Lưu ý, không dùng cho trẻ dưới 6 tháng tuổi.</li>
+                                                <li>
+                                                    Ngưng sử dụng và hỏi ý kiến ​​bác sĩ nếu các triệu chứng cảm không giảm (hoặc nặng hơn) sau 2 ngày sử dụng.
+
+                                                </li>
+                                                <li>
+                                                    Không sử dụng cho các dấu hiệu bất thường như sốt cao (trên 38 độ), tiêu chảy, nôn mửa, đỏ da, v.v.
+
+                                                </li>
+                                                <li>Bảo quản dưới 25 độ C, nhưng không để trong tủ lạnh. Ống đã mở sử dụng ngay lập tức.</li>
+                                                <li>
+                                                    Không sử dụng nếu nắp các tông bị kẹt, túi giấy bạc bên trong và hộp đựng dùng một lần không còn nguyên vẹn.
+
+                                                </li>
+                                                <li>Sau khi mở bao bì giấy nhôm bảo quản ở điều kiện bảo quản đặc biệt (25 ° C). </li>
+                                                <li>Sau khi mở sản phẩm dùng hết liều lượng. Không làm lạnh hoặc đông lạnh.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-collapse">
+                                            <button class="btn-show-content d-flex">Xem thêm \/</button>
+                                            <button class="btn-hide-content">Thu gọn /\</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <div class="full-content">
+                                            <b>
+                                                Chính sách giao hàng - HNCMUA
+                                            </b>
+                                            </br>
+                                            <b>
+                                                1. Phạm vi vận chuyển
+                                            </b>
+                                            <p>
+                                                HNCMUA cam kết giao hàng theo yêu cầu của khách hàng tại khắp 63 tỉnh thành trên toàn quốc. Riêng các địa chỉ nhận hàng tại khu vực nội thành Hà Nội và TP. Hồ Chí Minh sẽ được miễn phí giao hàng.
+
+                                            </p>
+                                            <p>
+                                                Các quận nội thành được HNCMUA miễn phí giao hàng bao gồm:
+                                            </p>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Hà Nội</td>
+                                                        <td>Quận Cầu Giấy, Hoàn Kiếm, Thanh Xuân, Ba Đình, Tây Hồ, Hai Bà Trưng, Đống Đa, Hoàng Mai, Long Biên, Hà Đông, Nam Từ Liêm và Bắc Từ Liêm.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Hồ Chí Minh</td>
+                                                        <td>Quận 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, Tân Bình, Tân Phú, Phú Nhuận, Bình Thạnh, Gò Vấp, Thủ Đức , Bình Tân.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </br>
+                                            <b>2. Thời gian giao hàng</b>
+
+
+                                            <p>Đối với khu vực Hà Nội và TP.HCM, HNCMUA sẽ tiến hành phát hàng đến địa chỉ mà quý khách đăng ký sau 24 giờ kể từ thời điểm khách hàng thanh toán 100% tổng số tiền hàng.</p>
+                                            <p>Đối với địa chỉ nhận hàng tại các tỉnh, HNCMUA sẽ giao hàng sau từ 1-2 ngày sau khi quý khách thanh toán.</p>
+                                            <b>Quý khách hàng lưu ý:</b>
+
+                                            <p>Để đảm bảo hàng hoá được vận chuyển nhanh chóng và thuận tiện nhất, khách hàng nên đăng ký địa điểm nhận hàng cố định, hạn chế việc thay đổi địa chỉ.</p>
+                                            <p>Trường hợp thay đổi địa chỉ nhận hàng, khách hàng cần phải báo trước tối thiểu là 01 ngày để bộ phận giao hàng phát đúng lịch trình và thời gian cam kết.</p>
+                                            <p>
+                                                Riêng với các yêu cầu phát hàng ngoài giờ của HNCMUA, khách hàng có thể sẽ phải trả thêm chi phí vận chuyển.
+
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-collapse">
+                                            <button class="btn-show-content d-flex">Xem thêm \/</button>
+                                            <button class="btn-hide-content">Thu gọn /\</button>
+                                        </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <div class="full-content">
+                                            <p>Kính đề nghị Quý khách hàng cân nhắc thận trọng và vui lòng xác nhận thông tin sau trước khi mua hàng trước khi xác nhận đơn đặt hàng:</p>
+                                            <div style="margin-left: 20px;">
+                                                <p>1. Tôi xác nhận tôi đã tìm hiểu kỹ thông tin chi tiết của Hàng Hóa, xuất xứ Hàng Hóa, chất lượng Hàng Hóa, các chính sách của website bán hàng trước khi tiến hành đặt mua trên HNCmua. Tôi đồng ý rằng trách nhiệm về chất lượng của Hàng Hóa khi Khách Hàng đặt mua trên HNCmua thuộc về website bán hàng và HNC được miễn trừ toàn bộ trách nhiệm có liên quan đến chất lượng của Hàng Hóa.</p>
+                                                <p>2. Tôi cam kết chỉ đặt mua hàng cho mục đích sử dụng và chỉ đặt những mặt hàng phù hợp với quy định pháp luật của nước xuất khẩu và quy định pháp luật của Việt Nam.</p>
+                                                <p>3. Tôi đồng ý để HNCmua thay mặt/đại diện cho tôi mua hàng tại website bán hàng mà tôi đã gửi link và cam kết tự chịu trách nhiệm về Hàng Hóa trước pháp luật, đặc biệt là tính hợp pháp của Hàng Hóa và nguồn gốc xuất xứ của Hàng Hóa.</p>
+                                                <p>4. Tôi cam kết không khiếu nại và sẽ miễn trừ toàn bộ trách nhiệm cho HNCmua đối với các rủi ro phát sinh từ nhà cung cấp mà không do lỗi của HNCmua bao gồm nhưng không giới hạn như nhà cung cấp giao hàng chậm, giao hàng không đầy đủ, giao hàng không đúng đơn đặt hàng hoặc không giao hàng….</p>
+                                                <p>5. Tôi tại đây đồng ý ủy thác cho HNCmua đứng tên trên tờ khai nhập khẩu để làm các thủ tục nhập khẩu Hàng Hóa vào Việt Nam.</p>
+                                                <p>6. Tôi cam kết đã đọc, hiểu đầy đủ các quy định được công bố công khai trên website HNCmua.com và sẽ không khiếu nại/khiếu kiện đối với các vấn đề phát sinh nếu các vấn đề đó đã được HNCmua quy định.</p>
+
+                                            </div>
+                                            <p>HNCmua rất mong nhận được sự cảm thông của Quý khách hàng.</p>
+                                            <p>HNCmua trân trọng cảm ơn!</p>
+                                        </div>
+                                        <div class="btn-collapse">
+                                            <button class="btn-show-content d-flex">Xem thêm \/</button>
+                                            <button class="btn-hide-content">Thu gọn /\</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

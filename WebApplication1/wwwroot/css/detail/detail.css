@@ -8,6 +8,8 @@
     border-radius: 0.25rem;
 }
 
+
+
 .breadcrumb-chevron-right {
     margin: 0px 20px 0px 20px;
     box-sizing: border-box;
@@ -44,7 +46,6 @@
 }
 
 .page-body {
-    padding: 30px 0;
     width: 100%;
 }
 
@@ -52,7 +53,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-family: SFUFutura-Book;
+    margin: 0 0 40px;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0 10px;
+    
 }
 
 .gallery {
@@ -62,7 +66,8 @@
 }
 
     .gallery .picture {
-        height: auto;
+        height: 100%;
+        overflow: hidden;
         width: 80%;
         margin-left: 10px;
         background: #e1e1e1;
@@ -86,4 +91,349 @@
         height: 100%;
         overflow: hidden;
         font-size: 0;
+        
+    }
+
+        .gallery .picture-thumbs .thumbs-item {
+            margin: 0;
+            padding-top: 100%;
+            position: relative;
+            display: inline-block;
+            height: calc(20% - 5px) !important;
+            overflow: hidden;
+            cursor: pointer;
+            background: #e1e1e1;
+        }
+            .gallery .picture-thumbs .thumbs-item:hover,
+            .box-product-img:hover {
+                opacity: 0.7;
+            }
+
+            .gallery .picture-thumbs .thumbs-item img {
+                object-fit: cover;
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                bottom: unset;
+                right: unset;
+                transform: translate(-50%,-50%);
+            }
+
+.thumbs-item .number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    z-index: 1;
+}
+
+    .thumbs-item .number span {
+        font-size: 20px
+    }
+    /*overview*/
+    .overview {
+        width: 50%;
+        padding-left: 20px;
+        position: relative;
+        margin: 0 0 50px;
+    }
+
+    .overview .product-name {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+        .overview .product-name h1 {
+            font-weight: bold;
+            font-size: 26px;
+        }
+    .overview .origin {
+        margin-bottom: 10px;
+    }
+
+.overview .origin span {
+    margin-right: 30px;
+}
+    .overview .prices {
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+        .overview .prices .new {
+            color: #c00;
+            display: flex;
+            align-items: end;
+        }
+            .overview .prices .new .price-value-0{
+                font-size: 20px
+            }
+
+            .overview .prices > div {
+                margin: 0 0 5px;
+            }
+
+        .overview .prices .old {
+            margin-left: 10px;
+            text-decoration: line-through;
+        }
+
+.prices .old-price-value {
+    transform: translate(0,-2px);
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.product-noteds ul{
+    padding-left: 0 !important;
+    list-style: none
+}
+
+.product-noteds ul li {
+    margin-bottom: 10px
+}
+
+.tier-price {
+    color: #c00;
+    font-weight: 600;
+    padding-right: 10%;
+}
+
+li .view-more {
+    color: #09f;
+    font-weight: bold;
+}
+
+.short-description {
+    margin: 0 0 25px;
+    line-height: 22px;
+    color: #666;
+}
+
+.list-button {
+    display: flex;
+}
+
+    .list-button .overview-buttons {
+        margin: 0 0 25px;
+        font-size: 0;
+    }
+
+        .list-button .overview-buttons button {
+            padding: 5px 15px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 43px;
+            border: none;
+            background-color: #eaeaea;
+            background-position: left center;
+            background-repeat: no-repeat;
+            text-align: left;
+            font-size: 14px;
+            color: #666;
+        }
+
+            .list-button .overview-buttons button img {
+                height: 20px;
+                color: #333;
+            }
+
+
+
+/*content*/
+.product-collateral {
+    margin: 0 0 75px;
+}
+
+    .product-collateral .detail-wrap {
+        text-align: left;
+    }
+
+        .product-collateral .detail-wrap .tab .tools {
+            width: 100%;
+            display: flex;
+        }
+            .product-collateral .detail-wrap .tab .tools::after {
+                border-bottom: 1px solid #000;
+                flex-grow: 1;
+                display: block;
+                content: "";
+            }
+
+            .product-collateral .detail-wrap .tab .tools .btn-tab-detail {
+                padding: 15px 40px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 15px;
+                font-family: SFUFutura-Heavy;
+                border: 1px solid #fff;
+                border-bottom: 1px solid #000;
+                background: #fff;
+            }
+
+            .product-collateral .detail-wrap .tab .tools .show {
+                border: 1px solid #000;
+                border-bottom: none !important;
+                color: #000;
+            }
+
+        .product-collateral .detail-wrap .tab .content-wrap{
+            padding: 30px 0;
+        }
+
+        .product-collateral .detail-wrap .tab .content-wrap .content-item {
+            max-height: 250px;
+            overflow: hidden;
+            position: relative;
+            transition: .1s;
+            padding-bottom: 15px;
+            display: none
+        }
+            .product-collateral .detail-wrap .tab .content-wrap .content-item::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                content: "";
+                display: block;
+                height: 30px;
+                background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.4),#fff 40%);
+            }
+            .btn-collapse {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 0;
+                z-index: 4;
+            }
+
+.btn-collapse button {
+    border: none;
+    background: none;
+    color: #09f;
+    font-weight: bold;
+    display: none;
+}
+.max-height-content {
+    max-height: 99999px !important;
+}
+.full-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.full-content table tr {
+    padding: 16px
+}
+
+    .full-content table td {
+        border: 1px solid #000001;
+        padding: 16px;
+    }
+
+    .full-content table tr :first-child {
+        text-align: center;
+        font-weight: 700;
+    }
+
+.popup-slide-wrap {
+    z-index: 9999;
+    display:none;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+    .popup-slide-wrap .box-slide {
+        position: absolute;
+        width: 500px;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+        .popup-slide-wrap .box-slide .btn-close-popup-slide {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            cursor: pointer;
+            width: 20px;
+            color: white
+        }
+
+        .popup-slide-wrap .box-slide .slide {
+            position: relative;
+            outline: none;
+        }
+
+            .popup-slide-wrap .box-slide .slide .slide-track {
+                position: relative;
+                z-index: 0;
+                overflow: hidden;
+            }
+
+popup-slide-wrap .box-slide .slide .slide-track .slide-list {
+    display: flex;
+}
+
+.slide-list .item-slide {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #e1e1e1;
+}
+
+    .slide-list .item-slide img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+    }
+
+.overlay1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0.5 !important;
+}
+
+.box-product-img .sale {
+    background: #c00;
+    position: absolute;
+    top: -12px;
+    right: -38px;
+    width: 100px;
+    height: 50px;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+    .box-product-img .sale p {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 3px;
+        font-size: 12px;
+        left: 50%;
+        transform: translate(-50%,0);
     }
