@@ -1,0 +1,155 @@
+﻿body{
+    background: #eee;
+}
+.logo-login {
+    padding: 50px 0;
+    text-align: center;
+}
+.tab {
+    width: 600px;
+    max-height: 90vh;
+    background: #fff;
+    position: relative;
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.tools {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.btn-tab {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+}
+
+.show {
+    border: 1px solid #000;
+    border-bottom: none !important;
+    color: #000;
+}
+
+.form-wrap {
+    width: 100%;
+    padding: 80px 90px;
+    overflow: auto;
+    height: calc(85vh - 70px);
+}
+
+    .form-wrap form input {
+        border: 1px solid #000;
+        width: 100%;
+        margin-top: 20px;
+        color: #000;
+        height: 40px;
+        padding: 5px 20px;
+    }
+
+        .form-wrap form input:focus {
+            outline: none;
+        }
+        
+
+        .checkbox-wrap {
+            display: flex;
+            align-items: center;
+        }
+.checkbox-wrap input {
+    height: 20px !important;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 20px !important;
+}
+
+    .checkbox-wrap span {
+        font-size: 13px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+.captcha-box {
+    margin: -15px 0 20px;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+    line-height: 0;
+}
+
+.captcha-login{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.btn-submit{
+    border: none !important;
+}
+
+.btn-forgot-password {
+    text-align: center;
+    text-decoration: underline;
+    color: #000;
+    font-weight: bold;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    .space span {
+        display: inline-block;
+        width: 40%;
+        transform: translate(0,-8px);
+        border-bottom: 1px solid #000;
+    }
+
+    .space p {
+        color: #000;
+        font-weight: bold;
+        margin: 0;
+    }
+
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 25px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    text-decoration: none;
+    margin-top:15px;
+
+}
+
+    .social-item img {
+        margin-right: 15px;
+        width: 30px;
+    }
+
+.social-item p {
+    margin-bottom: 0;
+    color: #000
+}
+
+.password-note {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-style: italic;
+    color: rbg(119,119,119) !important;
+}
